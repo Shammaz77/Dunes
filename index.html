@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/images/fav.png">
+  <link rel="icon" type="image/x-icon" href="/images/Group 1.png">
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/dunes.css">
+  <title>Dunes Water | Home Page</title>
+</head>
+<body>
+  <nav>
+    <div class="nav-main container-main">
+      <div class="nav-logo">
+        <a href="./index.html"><img src="./images/Dunes Logo-1.svg" alt=""></a>
+      </div>
+      <div class="nav-item-links align-items-center">
+        <ul class="mb-0">
+          <li><a class="active-nav" href="#">Home</a></li>
+          <li><a href="products.html">Our Product</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="nav-buttons">
+        <a class="btn dunes-primary-bg" href="cart.html">Cart <i class="ri-shopping-cart-2-fill"></i></a>
+        <a class="btn dunes-primary-bg" data-toggle="modal" data-target="#loginModal"  href="profaile.html">Profile <i class="ri-user-3-line"></i></a> <br>
+        <i onclick="toggleCartt()" class="ri-menu-line d-md-block d-lg-none"></i> 
+      </div>
+      <a href="#" class="navigate-arabic-web" ><i style="vertical-align: middle;font-size: 14px !important;" class="ri-earth-fill"></i> عربى</a>
+    </div>
+  </nav>
+  <!-- modal login  -->
+  <div style="z-index: 1200;"  class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div style="background: #ffff;width: 85%;border-radius: 20px;border: 1px solid #FAB04F;;margin: auto;" class="modal-content login-modal p-4">
+        <i class="ri-close-circle-line close" data-dismiss="modal" aria-label="Close"></i>
+        <div class="modal-body modal-loginform pt-0">
+          <h3 class="dunes-secondary-color text-center login-haeding">Login to get started</h3>
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Name</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Phone Number / Email Address</label>
+              <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <button data-target="#exampleModal11" href="exampleModal11" data-toggle="modal" data-dismiss="modal"  class="btn dunes-primary-bg login-modal-btn">Login</button>
+          </form>
+        </div>
+      </div>                                    
+    </div>              
+  </div>
+  <div  class="modal fade"  tabindex="-1" role="dialog" id="exampleModal11"  aria-labelledby="exampleModalLabel11" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div style="background: #ffff;width: 85%;border-radius: 20px;border: 1px solid #FAB04F;;margin: auto;" class="modal-content login-success p-4">
+        <i class="ri-close-circle-line close" data-dismiss="modal" aria-label="Close"></i>
+        <div class="modal-body modal-loginform pt-0">
+          <img class="succes-image" src="./images/succesimage.png" alt="">
+          <h2 class="text-center login-sucess-modal-head">Log in <br> Successfull</h2>
+          <a class="continue" href="profaile.html">Continue</a>
+        </div>
+      </div>                                     
+    </div>              
+  </div>
+  <!-- sidebar  -->
+  <div class="sidebar">
+    <div class="navbar-sidebar">
+      <ul>
+        <li><a class="" href="index.html"><i style="vertical-align: middle;" class="ri-earth-fill globe-icon"></i> عربى</a></li>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="products.html">Our Product</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a data-toggle="modal" data-target="#loginModal"  href="mobileprofile.html">Profile</a></li>
+        <li><a href="mobileorders.html">Orders</a></li>
+        <li><a href="addresslistpage.html">Address</a></li>
+        <!-- <li><a  data-toggle="modal" data-target="#loginModal"  href="">Profile</a></li> -->
+      </ul>
+    </div>
+    <div class="d-inline closse" onclick="toggleCartt()"><i class="ri-close-circle-line"></i></div>
+  </div>
+  <!-- home content  -->
+  <div  class="home-main" style="background-image: url(./images/Group\ 872\ \(1\).png);background-repeat: no-repeat;background-size: 100% auto;padding: 10% 0 17% 0;background-position: center;background-repeat: no-repeat;background-size: cover;height: -webkit-fill-available;">
+    <div class="container-main">
+      <h1 class="home-main-heading dunes-primary-color">Dunes, focused on making fresh  <br>  through innovative methods.</h1>
+      <h2 class="home-sub-heading">Purity In Every Drop, <span class="dunes-secondary-color" style="font-size: unset;"> Low Sodium</span></h2>
+      <p class="home-detail-heading">Our brand heart represents the core beliefs of our <br> organization. It voices the soul of our brand. Our brand <br>  focuses  on delivering authenticity and originality from  the heart.</p>
+      <a class="btn dunes-primary-bg text-white home-main-btn icon-home-arrow" href="tel:+966 0557424174">CALL TO ACTION <i class="ri-arrow-right-circle-line"></i></a>
+    </div>
+  </div>
+  <!-- product single  -->
+  <div class="products container-main">
+    <h1 class="text-center home-product-main-heading">Our <span style="font-size: unset;" class="dunes-primary-color">Products</span></h1>
+    <p class="text-center home-product-detail-title">Water is rather like magic; it keeping <br> our bodies' positive energies under touch.</p>
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="product-single text-center">
+          <img src="./images/IMG_5920 1.png" alt="product-image">
+          <p>200ml Carton (48 x 200ml)</p>
+          <p>SAR 16 (incl VAT) </p>
+          <p class="product-rate dunes-secondary-color">Offer price : SAR 14.5</p>
+          <a class="order-now-btn" href="cart.html"><i style="margin-right: 10px;font-size: 17px;" class="ri-shopping-cart-2-fill"></i>Order now</a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="product-single text-center">
+          <img src="./images/IMG_5920 1.png" alt="product-image">
+          <p>200ml Carton (48 x 200ml)</p>
+          <p>SAR 16 (incl VAT) </p>
+          <p class="product-rate dunes-secondary-color">Offer price : SAR 14.5</p>
+          <a class="order-now-btn" href="cart.html"><i style="margin-right: 10px;font-size: 17px;" class="ri-shopping-cart-2-fill"></i>Order now</a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="product-single text-center">
+          <img src="./images/IMG_5920 1.png" alt="product-image">
+          <p>200ml Carton (48 x 200ml)</p>
+          <p>SAR 16 (incl VAT) </p>
+          <p class="product-rate dunes-secondary-color">Offer price : SAR 14.5</p>
+          <a class="order-now-btn" href="cart.html"><i style="margin-right: 10px;font-size: 17px;" class="ri-shopping-cart-2-fill"></i>Order now</a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="product-single text-center">
+          <img src="./images/IMG_5920 1.png" alt="product-image">
+          <p>200ml Carton (48 x 200ml)</p>
+          <p>SAR 16 (incl VAT) </p>
+          <p class="product-rate dunes-secondary-color">Offer price : SAR 14.5</p>
+          <a class="order-now-btn" href="cart.html"><i style="margin-right: 10px;font-size: 17px;" class="ri-shopping-cart-2-fill"></i>Order now</a>
+        </div>
+      </div>
+    </div>
+    <a class="btn dunes-primary-bg home-product-view-more" href="products.html">View More</a>
+  </div>
+  <!-- about us section  -->
+  <div class="about-home" style="background-image: url(./images/Vector\ 2.png);background-repeat: no-repeat;background-size: 100% auto;padding: 7% 0 2% 0;background-repeat: no-repeat;background-size: cover;height: -webkit-fill-available;">
+    <div class="container-main">
+      <div class="row">
+        <div class="col-lg-6" style="display: inline-flex;align-items: center;">
+          <img src="./images/vission-img.png" alt="about-image">
+        </div>
+        <div class="col-lg-6">
+          <h1 class="text-center home-about-heading dunes-primary-color">About <span style="font-size: unset;color: #000;">us</span></h1>
+          <p class="text-justify">Dunes is a solution company focused on making fresh accessible for people through innovative methods. We ensure this by implementing the best of methods in the world of purification and supply technology. For us, is a gift more than it is a need. And this gift should be enjoyed with the best of experience.</p>
+          <p class="text-justify">Dunes' is derived from the nature of our home country, Kingdom of Saudi Arabia. Blessed with one of the largest sand deserts on earth, dunes are a core element of the Kingdom of Saudi Arabia. Proud to be providing an essential service to the citizens & residents of Saudi, it was befitting for us to derive the name from the very essence of the country.</p>
+        </div>
+      </div>
+      <a class="btn dunes-primary-bg home-about-btn" href="about.html">View More</a>
+    </div>
+  </div>
+  <!-- message section -->
+  <div class="send-message"  style="background-image: url(./images/send-message-bg.png);background-repeat: no-repeat;background-size: 100% auto;padding: 6% 0 2% 0;background-repeat: no-repeat;background-size: cover;height: -webkit-fill-available;">
+    <div class="container-main"> 
+      <div class="row">
+        <div class="col-lg-6 send-message-div">
+          <h1 class="dunes-primary-color send-message-heading">Get in touch with Dunes and <br> send us messages <br> for any info.</h1>
+          <h6 class="send-message-subheading">Just send us your query <br> we will give you the help you need at any time.</h6>
+        </div>
+        <div class="col-lg-6">
+          <form>
+            <div class="row">
+              <div class="col-lg-6">
+                <input type="text" class="form-control" placeholder="First name">
+              </div>
+              <div class="col-lg-6">
+                <input type="text" class="form-control" placeholder="Last name">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <input type="email" class="form-control" placeholder="Email Address">
+              </div> 
+              <div class="col-lg-6">
+                <input type="number" class="form-control" placeholder="Phone">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <textarea class="form-control" placeholder="Text your message.." id="exampleFormControlTextarea1" rows="4"></textarea>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <a class="btn dunes-primary-bg home-send-message-btn" href="#">Send message</a>
+    </div>
+  </div>
+  <footer class="text-lg-start">
+    <div class="container-main  text-md-start mt-5 mb-4">
+      <div class="row">
+        <div class="col-xl-3 col-lg-3 col-md-6 logo-div">
+          <a class="logo-footer" href="./index.html"><img src="./images/Dunes Logo-1.svg" alt=""></a>
+          <p class="logo-div-p" style="font-size: 14px;">Dunes is a 
+             solution company focused on making fresh 
+             accessible for people through innovative methods.</p>
+          <i class="ri-instagram-fill"></i>
+          <i class="ri-facebook-box-fill"></i>
+          <i class="ri-whatsapp-fill"></i>
+          <i  class="ri-youtube-fill"></i>
+        </div>
+        <div class="col-lg-3 col-md-6 col-6  mx-auto mb-4 information-div">
+          <h3 class="fw-bold">Information</h3>
+          <p><a href="#!" class="text-reset">About us</a></p>
+          <p><a href="#!" class="text-reset">Services</a></p>
+          <p><a href="#!" class="text-reset">Terms and Conditions</a></p>
+          <p><a href="#!" class="text-reset">Privacy Policy</a></p>
+        </div>
+        <div class="col-lg-3 col-md-6 col-6 mx-auto mb-4 services-div">
+          <h3 class="fw-bold">Services</h3>
+          <p><a href="#!" class="text-reset">Sample 1</a></p>
+          <p><a href="#!" class="text-reset">Sample 1</a></p>
+          <p><a href="#!" class="text-reset">Sample 1</a></p>
+          <p><a href="#!" class="text-reset">Sample 1</a></p>
+        </div>
+        <div class="col-lg-3 col-xl-3 col-md-6 mx-auto mb-md-0 mb-4 icon-contact">
+          <h3 class="fw-bold">Contact us</h3>
+          <p><i class="ri-mail-open-fill"></i> <a href="mailto:info@duness.com">info@dunes.com</a></p>
+          <p><i class="ri-global-fill"></i><a href="www.dunes.com">www.dunes.com</a></p>
+          <p><i class="ri-whatsapp-fill"></i><a href="whatsapp:contact=0557424174">+966 0557424174</a></p>
+          <p><i class="ri-phone-fill"></i><a href="tel:+966 0557427344">+966 0557427344</a></p>
+        </div>
+      </div>
+    </div> 
+    <div class="text-center footer-copy">
+      <p>© copyright 2022 Dunes | Designed by 
+        <a class="text-reset fw-bold" href="www.erebsindia.com">ERE Business Solutions</a>
+      </p>
+    </div>
+  </footer>
+  <!-- sidebar script  -->
+  <script src="./js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
